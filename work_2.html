@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Work</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/work_2.css">
+	<link rel="stylesheet" type="text/css" href="lightbox.css">
+	
+
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap" rel="stylesheet">
+
+
+ <style>
+        h1, h2, li, p, b {
+            font-family: 'Quicksand';
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        p {
+            color: black;
+        }
+    </style>
+	
+</head>
+
+<body>
+
+	<div id="header">
+		
+			<div id="navigation">
+				<ul style="padding: 10%;">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li class="selected">
+						<a href="work_2.html">Work</a>
+					</li>
+					<li>
+						<a href="blog.html">Wallpapers</a>
+					</li>
+					
+					<li>
+						<a href="contact.html">About Me</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+
+<section class="all">
+	<div class = head>
+		<div class = gallery>
+
+			<a href="images/20240628_174704.jpg" data-lightbox=students data-title='Volleyball'>
+				<img src="images/20240628_174704.jpg" class="scrapbook-image">
+			</a>
+
+			<a href="images/20240628_180626.jpg" data-lightbox=students data-title='Volleyball'>
+				<img src="images/20240628_180626.jpg" class="scrapbook-image">
+			</a>
+
+			<a href="images/20240628_175120.jpg" data-lightbox=students data-title='Volleyball'>
+				<img src="images/20240628_175120.jpg" class="scrapbook-image">
+			</a>
+
+			<a href="images/20240628_175320.jpg" data-lightbox=students data-title='Tabletennis '>
+				<img src="images/20240628_175320.jpg" class="scrapbook-image">
+			</a>
+
+			<a href="images/20240628_175440.jpg" data-lightbox=students data-title='Tabletennis '>
+				<img src="images/20240628_175440.jpg" class="scrapbook-image">
+			</a>
+
+			<a href="images/20240628_175542.jpg" data-lightbox=students data-title='Tabletennis '>
+				<img src="images/20240628_175542.jpg" class="scrapbook-image">
+			</a>
+		
+
+			<a href="images/20240628_175728.jpg" data-lightbox=students data-title='Soccer'>
+				<img src="images/20240628_175728.jpg" class="scrapbook-image">
+			</a> 
+
+
+			<a href="images/20240628_180126.jpg" data-lightbox=students data-title='Shodo'>
+				<img src="images/20240628_180126.jpg" class="scrapbook-image">
+			</a> 
+		</div>
+	</div>
+
+<script>
+    // Get all elements with class 'scrapbook-image'
+    const images = document.querySelectorAll('.scrapbook-image');
+
+    // Add event listener to each image
+    images.forEach(function(image) {
+        image.addEventListener('click', function() {
+            rateWork(image.src);
+        });
+    });
+
+    function rateWork(imageSrc) {
+        let rating;
+        while (true) {
+            rating = prompt("On a scale of 1 to 10, how would you rate this scrapbook work?");
+            if (rating && /^[1-9]$|^10$/.test(rating)) {
+                alert("Thank you for rating it a " + rating + "!");
+                break;
+            } else {
+                alert("Please type a number between 1 and 10.");
+            }
+        }
+    }
+</script>
+
+
+
+
+			
+
+	
+
+
+				
+	<div id="footer">
+			<div id="connect">
+				<a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook"></a> <a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter"></a> <a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus"></a> <a href="http://www.freewebsitetemplates.com/misc/contact/" target="_blank" class="mail"></a>
+			</div>
+			<ul class="navigation">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li class="selected">
+					<a href="work_2.html">Work</a>
+				</li>
+				<li>
+					<a href="blog.html">Wallpapers</a>
+				</li>
+				
+				<li>
+					<a href="contact.html">About Me</a>
+				</li>
+			</ul>
+			    <p class="uppercase">Copyright © 2011. Company Name. All Rights Reserved.</p>
+            <p>Name Tanzeela Waseem<br>Student ID: 23229616</p>
+        </div>
+    </div>
+
+     <script>
+        window.alert('Please rate my work by clicking on an image and responding to the question.');
+    </script
+</body>
+</html>
